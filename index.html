@@ -40545,6 +40545,11 @@
 			busqueda.bind("paste",function(e) {
 			  e.preventDefault();
 			});
+			
+			busqueda.keypress(function() {
+				/*btn.click();*/
+				$(".tabla").attr("style","display:none");
+			});
 		
 			busqueda.keyup(function (event) {
 				if (event.keyCode == 13 || event.keyCode == 08 || event.keyCode == 46) {
